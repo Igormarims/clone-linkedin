@@ -5,4 +5,149 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif ;
+    /* border: 1px solid red; */
+}
+
+body{
+    background: rgb(235,235,235);
+}
+
+ nav .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding:  0.3rem 4rem;
+    background: #fff;
+}
+
+nav .wrapper .left, 
+nav .wrapper .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .wrapper .left{
+    padding-left: 3rem;
+    gap: 0.4rem
+}
+
+nav .wrapper .logo i{
+    font-size: 2.5rem;
+    color: #0a66c2;
+
+}
+
+nav .wrapper .left .input {
+    background: #EEF3F8;
+    width: 100%;
+    padding: 0.48rem;
+    border-radius: 3px;
+    gap:0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+
+}
+
+nav .wrapper .left .input input[type='search'] {
+    width: 15rem ;
+    border: none;
+    background: transparent;
+    font-weight: 100;
+}
+
+nav .wrapper .left .input input[type='search']::placeholder{
+    font-size: 0.8rem;
+}
+    
+
+.input input[type='search']:focus{
+    outline: none;
+}
+
+nav .wrapper .left .input i {
+    margin: 0 3px;
+    color: #5F6163;
+    font-size: 0.9rem;
+}
+
+nav .wrapper .right .home,
+nav .wrapper .right .network,
+nav .wrapper .right .jobs,
+nav .wrapper .right .message,
+nav .wrapper .right .notification,
+nav .wrapper .right .me,
+nav .wrapper .right .me, .work{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 0.5rem;
+ cursor: pointer;
+}
+nav .wrapper .right .network,
+nav .wrapper .right .jobs,
+nav .wrapper .right .message,
+nav .wrapper .right .notification,
+nav .wrapper .right  .work{
+  color: gray;
+}
+nav .wrapper .right .home:hover,
+nav .wrapper .right .network:hover,
+nav .wrapper .right .jobs:hover,
+nav .wrapper .right .message:hover,
+nav .wrapper .right .notification:hover,
+nav .wrapper .right .me, .down :hover,
+nav .wrapper .right .me, .work :hover
+nav .wrapper .right  .work :hover{
+    color:#000;
+}
+
+
+nav .wrapper .right .home i ,
+nav .wrapper .right .network i,
+nav .wrapper .right .jobs i,
+nav .wrapper .right .message i,
+nav .wrapper .right .notification i{
+    font-size: 1.2rem;
+}
+
+nav .wrapper .right .me .down,
+nav .wrapper .right .work .down{
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    color: gray;
+}
+
+nav .wrapper .right .me > i:first-child {
+    background: gray;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav .wrapper .right .me {
+   gap: 0.1rem !important;
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    width: 7rem;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+}
+
+.wrapper a:hover{
+    text-decoration: underline;
 }
